@@ -14,15 +14,12 @@ module.exports = {
       backgroundImage: {
         'gradient-primary': 'linear-gradient(to right, #14F195, #399FE9, #7928D2)',
       },
-    },
-
-    fontFamily: {
-           buch: ['SoehneBuch', 'sans-serif'],
-        halbfett: ['SoehneHalbfett', 'sans-serif'],
-        kraeftig: ['SoehneKraeftig', 'sans-serif'],
-
-
+      fontFamily: {
+        soehneBuch: ['SoehneBuch', 'sans-serif'],
+    soehneHalbfett: ['SoehneHalbfett', 'sans-serif'],
+    soehneKraeftig: ['SoehneKraeftig', 'sans-serif'],
       },
+    },
   },
   plugins: [],
 };

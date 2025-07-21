@@ -2,57 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-   --background: #0a0a0a; 
-    --foreground: #ededed;
-  }
-}
-
-/* body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}  */
-/* body {
-  font-family: 'SoehneHalbfett', sans-serif;
-} */
-
 @font-face {
   font-family: 'SoehneBuch';
-  src: url('/assets/fonts/So╠êhne-Buch.otf') format('opentype');
+  src: url('/assets/fonts/Soehne-Buch.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-  
 }
 
 @font-face {
   font-family: 'SoehneHalbfett';
-  src: url('/assets/fonts/SoehneBreit-Halbfett.otf') format('opentype');
+  src: url('/assets/fonts/Soehne-Halbfett.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SoehneKraeftig';
-  src: url('/assets/fonts/SoehneBreit-Kraeftig.otf') format('opentype');
+  src: url('/assets/fonts/Soehne-Kraeftig.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
-
-.font-buch {
-  font-family: 'SoehneBuch', sans-serif;
-}
-
-.font-halbfett {
-  font-family: 'SoehneHalbfett', sans-serif;
-}
-
-.font-kraeftig {
-  font-family: 'SoehneKraeftig', sans-serif;
 }

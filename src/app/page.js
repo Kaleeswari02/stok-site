@@ -6,7 +6,6 @@ import { HeroSection } from "./components/HeroSection";
 export default function Home() {
   return (
     <>
-      <p>Home</p>
       <Header/>
       <HeroSection />
       <Footer />
