@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from "next/image";
 
 export default function Home() {
@@ -97,5 +98,19 @@ export default function Home() {
         </a>
       </footer>
     </div>
+=======
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { HeroSection } from "./components/HeroSection";
+
+export default function Home() {
+  return (
+    <>
+      <p>Home</p>
+      <Header />
+      <HeroSection />
+      <Footer />
+    </>
+>>>>>>> b27dcc7 (changes)
   );
 }
