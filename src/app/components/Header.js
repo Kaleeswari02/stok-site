@@ -18,7 +18,7 @@ export default function Header() {
         </div>
 
         {/* Center: Desktop Nav */}
-        <nav className="hidden md:flex space-x-10 font-medium text-black text-[20px]">
+        <nav className="hidden md:flex space-x-10 font-medium text-black text-[20px] font-soehneKraeftig">
           <Link href="/" className="hover:opacity-80">Home</Link>
           <Link href="https://docsend.com/view/584yys44vnrmdmpm" target='_blank' className="hover:opacity-80">Whitepaper</Link>
           <Link href="/blog" className="hover:opacity-80">Blog</Link>
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="hidden md:flex flex-col items-end">
           <Link
             href="/pre-register"
-            className="text-white px-10 py-3 rounded-full font-medium shadow-md hover:opacity-90 transition tracking-tight text-[20px]"
+            className="text-white px-10 py-3 rounded-full font-medium shadow-md hover:opacity-90 transition tracking-tight text-[20px] font-soehneKraeftig"
             style={{
               background: 'linear-gradient(to right, #14F195, #399FE9, #7928D2)',
             }}
@@ -36,7 +36,7 @@ export default function Header() {
             Pre-Register
           </Link>
           <p
-            className="text-xs font-medium mt-1 text-[16px]"
+            className="text-xs font-medium mt-1 text-[13px] font-soehneKraeftig"
             style={{ color: '#e4002b' }}
           >
             Token will launching in 190 Days to go.
