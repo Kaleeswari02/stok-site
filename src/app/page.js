@@ -1,4 +1,5 @@
 
+import EarningSection from "./components/EarningSection";
 import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Header/>
       <HeroSection />
+      <EarningSection/>
       <Footer />
     </>
   );
