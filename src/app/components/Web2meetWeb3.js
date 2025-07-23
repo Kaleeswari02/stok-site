@@ -27,12 +27,17 @@ export const Web2meetWeb3 = () => {
       <div className="relative z-10 max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="text-[32px] sm:text-[36px] md:text-[44px] font-soehneHalbfett leading-tight">
-            <span className="text-green-400">Web2</span>{" "}
+          <h2 className="text-[36px] md:text-[44px] font-soehneHalbfett leading-tight">
+            <span className="bg-gradient-to-r from-[#00E0C2] to-[#14F195] text-transparent bg-clip-text">
+              Web2
+            </span>{" "}
             <span className="text-black">Meets</span>{" "}
-            <span className="text-blue-500">Web3</span>
+            <span className="bg-gradient-to-r from-[#5B5BD6] to-[#A349F4] text-transparent bg-clip-text">
+              Web3
+            </span>
           </h2>
-          <p className="text-gray-700 text-base sm:text-lg md:text-xl font-medium mt-2 max-w-2xl mx-auto font-soehneKraeftig">
+
+          <p className="text-gray-700 text-base sm:text-lg xl:text-[18px] md:text-xl mt-2 max-w-2xl mx-auto font-soehneKraeftig">
             Experience the future of fitness gaming with cutting-edge blockchain
             technology
           </p>
