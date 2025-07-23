@@ -22,15 +22,18 @@ export default function EarnSection() {
     ),
     customPaging: (i) => (
       <div
-        style={{
-          width: i === currentSlide ? "30px" : "10px",
-          height: "10px",
-          borderRadius: i === currentSlide ? "6px" : "50%",
-          background: i === currentSlide ? "#14F195" : "#D9D9D9",
-          margin: "20px -2vw",
-          transition: "all 0.3s ease",
-        }}
-      />
+      key={i}
+      style={{
+        width: i === currentSlide ? "50px" : "20px",
+        height: i === currentSlide ? "8px" : "20px",
+        borderRadius: i === currentSlide ? "6px" : "50%",
+        background: i === currentSlide ? "#14F195" : "#D9D9D9",
+        margin: "5px -40px",
+        transition: "all 0.3s ease",
+      }}
+    />
+    
+    
     ),
   };
 
@@ -66,9 +69,9 @@ export default function EarnSection() {
       </div>
 
       {/* Right: Text and Button */}
-      <div className="w-full md:w-1/2 mt-12 md:mt-0 md:pl-12 text-center md:text-left">
-        <h2 className="text-[32px] md:text-[40px] font-bold flex flex-wrap items-center">
-          <span className="bg-[linear-gradient(to_right,#14F195,#399FE9,#7928D2)] text-transparent bg-clip-text">
+      <div className="w-full md:w-1/2  md:mt-0  text-center md:text-left">
+        <h2 className="text-[32px] md:text-[45px] font-bold flex flex-wrap items-center">
+          <span className="bg-[linear-gradient(to_right,#14F195,#399FE9,#7928D2)] text-transparent bg-clip-text font-soehneKraeftig">
             Two ways to
           </span>
           <span className="ml-2 flex items-center">
@@ -79,12 +82,12 @@ export default function EarnSection() {
           </span>
         </h2>
 
-        <p className="mt-4 text-[#3B3B3B] text-[18px] leading-relaxed max-w-xl">
+        <p className="mt-4 text-[#3B3B3B] text-[20px] leading-relaxed max-w-xl font-soehneKraeftig">
           Sportstech makes it easy to convert your workouts to earnings. It’s easy as downloading our app and going for a run. Want to earn more? Purchase one of our Fitness Miners, workout, and earn gamified rewards.
         </p>
 
         <div className="mt-8 inline-block p-[2px] rounded-full bg-gradient-to-r from-[#00E599] via-[#3C82F4] to-[#5729F9]">
-          <button className="bg-white text-[#3B3B3B] text-[18px] font-semibold px-6 py-3 rounded-full hover:bg-[#f5f5f5] transition">
+          <button className="bg-white text-[#3B3B3B] text-[20px] font-semibold px-7 py-4 rounded-full hover:bg-[#f5f5f5] transition font-soehneKraeftig">
             Learn more
           </button>
         </div>

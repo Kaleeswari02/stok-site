@@ -31,9 +31,9 @@ export const HeroSection = () => {
 
           {/* Stats */}
           <div className="mt-12">
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-10 sm:gap-8 lg:gap-10 text-left">
+            <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 sm:gap-8 lg:gap-10 text-left">
               {/* Stat 1 */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 min-h-[60px]">
                 <Image src={treadmillIcon} alt="treadmill" width={60} height={60} />
                 <p className="text-sm sm:text-base font-soehneKraeftig text-gray-800 leading-tight whitespace-nowrap">
                   1.8 Million users<br />pre-registered
@@ -41,11 +41,12 @@ export const HeroSection = () => {
               </div>
 
               {/* Divider */}
-    <div className="hidden sm:block h-[60px] w-[2px] bg-gradient-to-b from-[#FFBB00] to-[#8B5CF6] opacity-100 mx-6 rounded-full" />
-
+              <div className="hidden sm:flex items-center">
+                <div className="h-[60px] w-[2px] bg-gradient-to-b from-[#FFBB00] to-[#8B5CF6] rounded-full mx-2 sm:mx-4" />
+              </div>
 
               {/* Stat 2 */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 min-h-[60px]">
                 <Image src={GlobIcon} alt="global" width={56} height={56} />
                 <p className="text-sm sm:text-base font-soehneKraeftig text-gray-800 leading-tight whitespace-nowrap">
                   50% users<br />around the world
@@ -53,9 +54,12 @@ export const HeroSection = () => {
               </div>
 
               {/* Divider */}
-<div className="hidden sm:block h-[60px] w-[2px] bg-gradient-to-b from-[#FFBB00] to-[#8B5CF6] opacity-100 mx-6 rounded-full" />
+              <div className="hidden sm:flex items-center">
+                <div className="h-[60px] w-[2px] bg-gradient-to-b from-[#FFBB00] to-[#8B5CF6] rounded-full mx-2 sm:mx-4" />
+              </div>
+
               {/* Stat 3 */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 min-h-[60px]">
                 <Image src={TrustIcon} alt="trust" width={56} height={56} />
                 <p className="text-sm sm:text-base font-soehneKraeftig text-gray-800 leading-tight whitespace-nowrap">
                   100% Trustable

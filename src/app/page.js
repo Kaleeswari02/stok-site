@@ -1,6 +1,7 @@
 
 import EarningSection from "./components/EarningSection";
-import { Footer } from "./components/Footer";
+import Footer from "./components/Footer";
+
 import { GameVideoSection } from "./components/GameVideoSection";
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
@@ -18,7 +19,7 @@ export default function Home() {
       <GameVideoSection/>
       <OurEconomy/>
       <OurJourney/>
-      <Footer />
+      <Footer/>
     </>
   );
 }
