@@ -37,7 +37,7 @@ export default function Header() {
             Pre-Register
           </button>
           <p className="text-xs font-medium mt-1 text-[13px] font-soehneKraeftig" style={{ color: '#e4002b' }}>
-            Token will launching in 190 Days to go.
+            Token will launching in 190 Days.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function Header() {
           >
             Pre-Register
           </button>
-          <p className="text-xs text-red-600 font-medium">Token will launching in 190 Days to go.</p>
+          <p className="text-xs text-red-600 font-medium">Token will launching in 190 Days.</p>
         </div>
       )}
 

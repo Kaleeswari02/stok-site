@@ -7,7 +7,7 @@ import Logo from "../../../public/assets/images/registerform/logo.png";
 import Overlay from "../../../public/assets/images/registerform/overlay.png";
 import Runner from "../../../public/assets/images/registerform/runner.jpg";
 
-export default function RegisterForm({ onClose }) {
+export default function RegisterForm({ onClose, value }) {
   const [isLoading, setIsLoading] = useState(false);
   const {
     register,
@@ -45,8 +45,18 @@ export default function RegisterForm({ onClose }) {
       <div className="flex h-full">
         {/* Left Image Side */}
         <section className="relative hidden md:block md:w-6/12 h-full">
-          <Image src={Runner} alt="Fit woman on treadmill" fill className="object-cover" />
-          <Image src={Overlay} alt="Overlay" fill className="object-cover z-10 opacity-100" />
+          <Image
+            src={Runner}
+            alt="Fit woman on treadmill"
+            fill
+            className="object-cover"
+          />
+          <Image
+            src={Overlay}
+            alt="Overlay"
+            fill
+            className="object-cover z-10 opacity-100"
+          />
         </section>
 
         {/* Right Form Side */}
@@ -83,9 +93,11 @@ export default function RegisterForm({ onClose }) {
                   </label>
                   <div
                     className={`transition-all duration-300 rounded-[80px] border px-[18px] py-[12px]
-                    ${errors.email
+                    ${
+                      errors.email
                         ? "border-red-500"
-                        : "border-gray-400 focus-within:ring-[1.5px] focus-within:ring-blue-500"}
+                        : "border-gray-400 focus-within:ring-[1.5px] focus-within:ring-blue-500"
+                    }
                   `}
                   >
                     <input
@@ -115,9 +127,11 @@ export default function RegisterForm({ onClose }) {
                   </label>
                   <div
                     className={`transition-all duration-300 rounded-[80px] border px-[18px] py-[12px]
-                    ${errors.password
+                    ${
+                      errors.password
                         ? "border-red-500"
-                        : "border-gray-400 focus-within:ring-[1.5px] focus-within:ring-blue-500"}
+                        : "border-gray-400 focus-within:ring-[1.5px] focus-within:ring-blue-500"
+                    }
                   `}
                   >
                     <input
@@ -180,7 +194,7 @@ export default function RegisterForm({ onClose }) {
                       onClick={onClick}
                       type="button"
                       aria-label={`Register with ${alt}`}
-                      className="aspect-square w-[42px] shadow-md rounded-lg hover:shadow-lg transition-shadow"
+                      className="aspect-square w-[42px] rounded-lg  transition-shadow"
                     >
                       <img
                         src={src}

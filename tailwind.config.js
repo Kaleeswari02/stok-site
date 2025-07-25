@@ -18,6 +18,7 @@ module.exports = {
         soehneBuch: ['SoehneBuch', 'sans-serif'],
     soehneHalbfett: ['SoehneHalbfett', 'sans-serif'],
     soehneKraeftig: ['SoehneKraeftig', 'sans-serif'],
+    soehneExtrafett: ['SoehneExtrafett', 'sans-serif'],
       },
     },
   },

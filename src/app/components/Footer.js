@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import RegisterModal from './RegisterModal';
 
 const SocialStat = ({ icon, followers, iconAlt }) => (
   <div className="hover:transform hover:scale-105 transition-transform duration-300 flex flex-col items-center">
@@ -23,8 +24,10 @@ const SocialStat = ({ icon, followers, iconAlt }) => (
   </div>
 );
 
-export default function Footer() {
+export const Footer =()=> {
   const [email, setEmail] = useState('');
+  const [showModal, setShowModal] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -91,25 +94,34 @@ export default function Footer() {
           {/* Left-Aligned Section */}
           <div className="w-full flex flex-col items-start text-left max-w-[730px] mt-[50px]">
             {/* Newsletter Form */}
-            <form
-              onSubmit={handleSubmit}
-              className="flex items-center gap-4 w-full mb-10 flex-wrap"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                placeholder="Enter your email"
-                className="flex-1 min-w-[260px] h-[60px] sm:h-[70px] md:h-[75px] rounded-full border border-black px-6 text-black placeholder-gray-500 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#14F195] via-[#399FE9] to-[#7928D2] text-white text-base sm:text-lg font-semibold rounded-full shadow-md hover:scale-105 transition-transform font-soehneKraeftig"
-              >
-                Register Now
-              </button>
-            </form>
+     <form
+  onSubmit={handleSubmit}
+  className="flex items-center gap-4 w-full mb-10 flex-wrap"
+>
+  <input
+    type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    required
+    placeholder="Enter your email"
+    className="flex-1 min-w-[260px] h-[60px] sm:h-[70px] md:h-[75px] rounded-full border border-black px-6 text-black placeholder-gray-500 placeholder:font-soehneKraeftig focus:outline-none"
+  />
+
+  <button
+    type="submit"
+    disabled={!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)}
+    className={`px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-md font-soehneKraeftig transition-transform 
+      ${
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+          ? 'bg-gradient-to-r from-[#14F195] via-[#399FE9] to-[#7928D2] text-white hover:scale-105 cursor-pointer'
+          : 'bg-gradient-to-r from-[#14F195] via-[#399FE9] to-[#7928D2] text-white opacity-50 cursor-not-allowed'
+      }`}
+    onClick={() => setShowModal(true)}
+  >
+    Register Now
+  </button>
+</form>
+
 
             {/* Footer Links & Copyright */}
             <div className="flex w-full flex-wrap text-[rgba(30,30,30,1)] items-start justify-between">
@@ -134,6 +146,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+         {/* Modal for Registration */}
+            <RegisterModal isOpen={showModal} onClose={() => setShowModal(false)} value={email}/>
     </footer>
   );
 }
